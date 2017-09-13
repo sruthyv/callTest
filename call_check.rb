@@ -4,6 +4,7 @@ class CallCheck
     @phoneString = method_name[/\d+/].to_s
     @phoneNumber = method_name[5..method_name.length] 
     @lengthOfNum = @phoneString.length
+
     if @phoneString != @phoneNumber
         return "invalid number"
     else
@@ -19,7 +20,7 @@ class CallCheck
                                               (@phoneString.start_with? '9')
              return "valid number"
           else
-             return  "invalid number"
+             return "invalid number"
           end
           else
             return "invalid number"        
