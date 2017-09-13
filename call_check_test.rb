@@ -31,11 +31,11 @@ class CallTest < Minitest::Test
   end
 
   def test_call_8547810845_call  
-    assert_equal "valid number", @phone5
+    assert_equal "invalid number", @phone5
   end 
 
   def test_call_call_8547810845  
-    assert_equal "valid number", @phone6
+    assert_equal "invalid number", @phone6
   end
 
 end
