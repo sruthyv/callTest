@@ -1,7 +1,7 @@
 class CallCheck
   
   def method_missing(method_name, *args, &block)
-     @phoneString = method_name[5..method_name.length]
+     @phoneString = method_name[/\d+/].to_s 
      # puts @phoneString
      @lengthOfNum = @phoneString.length
      # puts @lengthOfNum
